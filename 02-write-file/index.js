@@ -3,7 +3,7 @@ const fs = require('fs');
 const process = require('process')
 let arr = path.join(__dirname, 'text.txt')
 function func(){
-    fs.open(arr,'w',(err, fd)=>{
+    fs.open(arr,'a',(err, fd)=>{
         if(err){
             throw err
         }
